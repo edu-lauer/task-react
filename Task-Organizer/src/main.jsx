@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import Tasks from './views/Tasks/Tasks'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import './index.scss'
 
 
 const db = [
@@ -17,10 +18,16 @@ const db = [
   { "id": 10, "title": "shopping", "description": "Fazer algumas compras no shopping", "completed": true }
 ]
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Tasks data={ db } />,
+  }]
+)
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
