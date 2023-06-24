@@ -2,7 +2,7 @@ import React from "react"
 import './lineTable.scss'
 
 
-const LineTable = () => {
+const LineTable = ({ data }) => {
     return (
         <tr>
             <th>Tarefa</th>
