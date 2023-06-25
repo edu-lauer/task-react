@@ -13,9 +13,9 @@ const Table = ({ data }) => {
                     <th className="mainContainer__table-thirdColumn">Opções</th>
                 </tr>
                 {
-                    data.map((task) => {
-                        <LineTable key={task.id} data={task} />
-                    })
+                    data.map((task) => (
+                        <LineTable key={task.id} data={task}/>
+                    ))
                 }
             </table>
         </section>

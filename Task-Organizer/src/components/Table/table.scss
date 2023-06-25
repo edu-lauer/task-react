@@ -15,7 +15,7 @@
     }
 
     &__table {
-        display: flex;
+        display: grid;
         justify-content: center;
         padding-top: 7rem;
     }
@@ -32,11 +32,7 @@
     }
 
     &__table-firstLine:first-child {
-        padding-left: 2rem;
-    }
-
-    &__table-firstLine:last-child {
-        padding-right: 2rem;
+        padding-left: 1rem;
     }
 
     &__table-firstColumn,
@@ -51,5 +47,9 @@
     &__table-secondColumn,
     &__table-thirdColumn {
         padding-left: 15rem;
+    }
+
+    &__table-thirdColumn {
+        padding-right: 1rem;
     }
 }
