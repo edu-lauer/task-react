@@ -80,4 +80,8 @@
     &__table-lastLine-lastColumn {
         padding-right: 3rem;
     }
+
+    &__table-lastLine-lastColumn:hover {
+        cursor: pointer;
+    }
 }
