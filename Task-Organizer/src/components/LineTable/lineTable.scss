@@ -1,3 +1,41 @@
 @use "../../sass/variables" as *;
 
 
+.itemToDo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 370px 60px 375px;
+
+
+    &__title {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    &__status {
+        text-align: center;
+    }
+
+    &__options {
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    &__option-delete {
+        margin-left: 0.5rem;
+    }
+
+
+    &__title,
+    &__status,
+    &__options {
+        margin-top: 2rem;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 1.55rem  ;
+    }
+}
+
+.itemToDo:last-child {
+    margin-bottom: 5rem;
+}

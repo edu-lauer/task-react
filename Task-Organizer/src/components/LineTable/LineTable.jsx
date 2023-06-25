@@ -8,7 +8,7 @@ const LineTable = ({ data }) => {
     return (
         <tr className="itemToDo">
             <th className="itemToDo__title">{data.title}</th>
-            <th className="itemToDo__status">{data.completed}</th>
+            <th className="itemToDo__status"><input type="checkbox"/></th>
             <th className="itemToDo__options">
                 <img className="itemToDo__option-edit" src={editImg} alt="" />
                 <img className="itemToDo__option-delete" src={deleteImg} alt="" />
