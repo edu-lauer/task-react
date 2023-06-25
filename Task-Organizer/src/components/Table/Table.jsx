@@ -1,6 +1,7 @@
 import React from "react"
 import './table.scss'
 import LineTable from "../LineTable/LineTable"
+import addImg from '../../assets/img/add.svg'
 
 const Table = ({ data }) => {
     return (
@@ -16,7 +17,11 @@ const Table = ({ data }) => {
                     data.map((task) => (
                         <LineTable key={task.id} data={task}/>
                     ))
-                }
+                }  
+                <tr className="mainContainer__table-lastLine">
+                    <input className="mainContainer__table-lastLine-firstColumn" type="text" placeholder="Nova tarefa..."/>
+                    <img className="mainContainer__table-lastLine-lastColumn" src={addImg} alt=""></img>
+                </tr>                                                                               
             </table>
         </section>
     )

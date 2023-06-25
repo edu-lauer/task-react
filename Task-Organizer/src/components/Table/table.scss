@@ -52,4 +52,32 @@
     &__table-thirdColumn {
         padding-right: 1rem;
     }
+
+
+    &__table-lastLine {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__table-lastLine-firstColumn {
+        padding-left: 1rem;
+        background: transparent;
+        border: none;
+
+        font-family: 'Raleway';
+        font-size: 1.56rem;
+        font-style: italic;
+        font-weight: 400;
+        color: $white;
+    }
+
+    &__table-lastLine-firstColumn::placeholder {
+        color: $white;
+    }
+
+    &__table-lastLine-lastColumn {
+        padding-right: 3rem;
+    }
 }
