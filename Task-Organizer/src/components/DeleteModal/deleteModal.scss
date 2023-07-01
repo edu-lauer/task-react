@@ -1,0 +1,73 @@
+@use "../../sass/variables" as *;
+
+.deleteModalContainerMain {
+    height: 100vh;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.deleteModal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 758px;
+    height: 436px;
+    border-radius: 10px;
+    border: 1px;
+
+    background-color: $white;
+
+    &__title {
+        color: $black;
+        font-size: 35px;
+        font-weight: 600;
+        font-family: 'Raleway';
+
+        margin-top: 6rem;
+    }
+
+    &__subtitle {
+        color: $black;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Raleway';
+
+        margin-top: 4rem;
+    }
+
+    &__btns {
+        margin-top: 6rem;
+    }
+
+    &__btns-no,
+    &__btns-yes {
+        width: 9rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        border-color: $black;
+        background-color: $white;
+
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+
+    &__btns-no {
+        margin-right: 2rem;
+    }
+
+    &__btns-yes {
+        margin-left: 2rem;
+    }
+
+    &__btns-no:hover,
+    &__btns-yes:hover {
+        background-color: $contrast-color;
+        color: $white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
