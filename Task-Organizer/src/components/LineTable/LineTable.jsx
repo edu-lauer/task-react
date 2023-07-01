@@ -2,8 +2,11 @@ import React, { useState } from "react"
 import './lineTable.scss'
 import editImg from '../../assets/img/edit.svg'
 import deleteImg from '../../assets/img/delete.svg'
+import { useNavigate } from "react-router-dom"
 
 const LineTable = ({ data }) => {
+
+    const navigate = useNavigate()
 
     const [check, setCheck] = useState()
     data.completed = check
@@ -21,7 +24,9 @@ const LineTable = ({ data }) => {
                 }
             }} /></th>
             <th className="itemToDo__options">
-                <img className="itemToDo__option-edit" src={editImg} alt="" />
+                <img className="itemToDo__option-edit" src={editImg} alt="" onClick={() => {
+                    navigate('/edit')
+                }}/>
                 <img className="itemToDo__option-delete" src={deleteImg} alt="" />
             </th>
         </tr>
