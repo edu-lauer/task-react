@@ -6,7 +6,7 @@ import './editModal.scss'
 const EditModal = () => {
     return (
         <>
-            <div className="mainContainer">
+            <div className="editModalContainerMain">
                 <div className="editModal">
                     <h1 className="editModal__title">Deseja editar esse item?</h1>
                     <h5 className="editModal__subtitle">Colocar as descrições da tarefa aqui.</h5>

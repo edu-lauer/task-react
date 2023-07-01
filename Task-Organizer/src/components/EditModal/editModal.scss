@@ -1,6 +1,6 @@
 @use "../../sass/variables" as *;
 
-.mainContainer {
+.editModalContainerMain {
     height: 100vh;
     background-color: $black;
     display: flex;
@@ -9,6 +9,9 @@
 }
 
 .editModal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 758px;
     height: 436px;
     border-radius: 10px;
