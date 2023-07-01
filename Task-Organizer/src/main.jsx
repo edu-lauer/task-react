@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Tasks from './views/Tasks/Tasks'
+import EditItem from './views/EditItem/EditItem'
+import DeleteItem from './views/DeleteItem/DeleteItem'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.scss'
 
@@ -21,7 +23,15 @@ const db = [
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Tasks data={ db } />,
+    element: <Tasks data={db} />,
+  },
+  {
+    path: "/edit",
+    element: <EditItem />
+  },
+  {
+    path: "/delete:id",
+    element: <DeleteItem />
   }]
 )
 
