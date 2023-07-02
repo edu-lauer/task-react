@@ -121,12 +121,61 @@
         }
 
         &__table-lastLine-firstColumn {
-            padding-left: 6.8rem;
+            padding-left: 5.9rem;
             font-size: 1.1rem;
         }
 
         &__table-lastLine-lastColumn {
-            padding-right: 8rem;
+            padding-right: 7rem;
+        }
+    }
+}
+
+/*********************************************************************************************/
+/************************************ RESPONSIVIDADE *****************************************/
+/************************************     425px      *****************************************/
+/*********************************************************************************************/
+
+@media screen and (max-width: 426px) {
+    .mainContainer {
+        &__table {
+            padding-top: 3rem;
+            width: 425px;
+        }
+
+        &__table-firstLine {
+            width: 400px;
+            border-bottom-width: 0.2rem;
+            padding-bottom: 1.2rem;
+        } 
+
+        &__table-firstColumn,
+        &__table-secondColumn,
+        &__table-thirdColumn {
+            font-size: 0.7rem;
+        }
+
+        &__table-secondColumn,
+        &__table-thirdColumn {
+            padding-left: 0%;
+        }
+
+        &__table-thirdColumn {
+            padding-right: 0rem;
+        }
+
+        &__table-lastLine {
+            margin-top: 1.5rem;
+        }
+
+        &__table-lastLine-firstColumn {
+            padding-left: 3.5rem;
+            font-size: 0.7rem;
+        }
+
+        &__table-lastLine-lastColumn {
+            padding-right: 3.5rem;
+            width: 16%;
         }
     }
 }
