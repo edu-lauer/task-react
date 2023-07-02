@@ -32,7 +32,7 @@
         margin-top: 2rem;
         font-family: 'Raleway';
         font-weight: 400;
-        font-size: 1.55rem  ;
+        font-size: 1.55rem;
     }
 
     &__option-edit,
@@ -43,4 +43,33 @@
 
 .itemToDo:last-child {
     margin-bottom: 5rem;
+}
+
+
+/*********************************************************************************************/
+/************************************ RESPONSIVIDADE *****************************************/
+/*********************************************************************************************/
+
+
+@media screen and (max-width: 768px) {
+    .itemToDo {
+        &__title {
+            text-align: left;
+            margin-left: 6rem;
+        }
+
+        &__options {
+            margin-right: 5rem;
+        }
+
+        &__option-delete {
+            margin-left: 0.5rem;
+        }
+
+        &__title,
+        &__status,
+        &__options {
+            font-size: 1.1rem;
+        }
+    }
 }

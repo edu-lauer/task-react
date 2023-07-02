@@ -7,7 +7,7 @@
     height: auto;
     color: $white;
 
-    
+
     &__table {
         display: grid;
         justify-content: center;
@@ -77,5 +77,56 @@
 
     &__table-lastLine-lastColumn:hover {
         cursor: pointer;
+    }
+}
+
+
+/*********************************************************************************************/
+/************************************ RESPONSIVIDADE *****************************************/
+/*********************************************************************************************/
+
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        &__table {
+            display: grid;
+            justify-content: center;
+            padding-top: 4rem;
+        }
+
+        &__table-firstLine {
+            display: flex;
+            justify-content: space-around;
+            border-bottom-width: 0.3rem;
+            padding-bottom: 1.5rem;
+        }
+
+        &__table-firstColumn,
+        &__table-secondColumn,
+        &__table-thirdColumn {
+            font-size: 1.2rem;
+        }
+
+        &__table-secondColumn,
+        &__table-thirdColumn {
+            padding-left: 0%;
+        }
+
+        &__table-thirdColumn {
+            padding-right: 0rem;
+        }
+
+        &__table-lastLine {
+            margin-top: 2rem;
+        }
+
+        &__table-lastLine-firstColumn {
+            padding-left: 6.8rem;
+            font-size: 1.1rem;
+        }
+
+        &__table-lastLine-lastColumn {
+            padding-right: 8rem;
+        }
     }
 }
