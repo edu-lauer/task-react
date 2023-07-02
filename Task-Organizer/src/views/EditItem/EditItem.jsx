@@ -3,11 +3,11 @@ import './editItem.scss'
 import Header from '../../components/Header/Header'
 import EditModal from "../../components/EditModal/EditModal"
 
-const EditItem = () => {
+const EditItem = ({ data }) => {
     return (
         <>
             <Header />
-            <EditModal />
+            <EditModal data={ data } />
         </>
     )
 }

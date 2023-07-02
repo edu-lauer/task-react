@@ -25,10 +25,10 @@ const LineTable = ({ data }) => {
             }} /></th>
             <th className="itemToDo__options">
                 <img className="itemToDo__option-edit" src={editImg} alt="" onClick={() => {
-                    navigate('/edit')
+                    navigate(`/edit/${data.id}`)
                 }}/>
                 <img className="itemToDo__option-delete" src={deleteImg} alt="" onClick={() => {
-                    navigate('/delete')
+                    navigate(`/delete/${data.id}`)
                 }} />
             </th>
         </tr>
