@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     element: <EditItem data={db} />
   },
   {
-    path: "/delete",
+    path: "/delete/:taskId",
     element: <DeleteItem data={db} />
   }]
 )
