@@ -27,7 +27,9 @@ const LineTable = ({ data }) => {
                 <img className="itemToDo__option-edit" src={editImg} alt="" onClick={() => {
                     navigate('/edit')
                 }}/>
-                <img className="itemToDo__option-delete" src={deleteImg} alt="" />
+                <img className="itemToDo__option-delete" src={deleteImg} alt="" onClick={() => {
+                    navigate('/delete')
+                }} />
             </th>
         </tr>
     )
