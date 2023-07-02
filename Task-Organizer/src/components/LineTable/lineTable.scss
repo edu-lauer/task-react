@@ -81,30 +81,33 @@
 /************************************     425px      *****************************************/
 /*********************************************************************************************/
 
-.itemToDo {
-    grid-template-columns: 180px 55px 165px;
-    &__title {
-        text-align: left;
-        margin: 2rem 0rem 0rem 3.5rem;
-        padding: 0;
+@media screen and (max-width: 426px) {
+    .itemToDo {
+        grid-template-columns: 180px 55px 165px;
+        &__title {
+            text-align: left;
+            margin: 2rem 0rem 0rem 3.5rem;
+            padding: 0;
+        }
+    
+        &__options {
+            margin-right: 1.6rem;
+        }
+    
+        &__option-delete {
+            margin-left: 0.3rem;
+        }
+    
+        &__title,
+        &__status,
+        &__options {
+            font-size: 0.6rem;
+        }
+    
+        &__option-edit,
+        &__option-delete {
+            width: 15%;
+        }
     }
 
-    &__options {
-        margin-right: 1.6rem;
-    }
-
-    &__option-delete {
-        margin-left: 0.3rem;
-    }
-
-    &__title,
-    &__status,
-    &__options {
-        font-size: 0.6rem;
-    }
-
-    &__option-edit,
-    &__option-delete {
-        width: 15%;
-    }
 }
