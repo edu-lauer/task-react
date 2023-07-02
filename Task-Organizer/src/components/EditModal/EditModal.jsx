@@ -34,8 +34,12 @@ const EditModal = ({ data }) => {
                         value={newTitle}
                         onChange={(e) => setNewTitle(e.target.value)} />
                     <div className="editModal__btns">
-                        <button className="editModal__btns-no">Não</button>
-                        <button className="editModal__btns-yes">Sim</button>
+                        <button className="editModal__btns-no" onClick={() => {
+                            navigate('/')
+                        }}>Não</button>
+                        <button className="editModal__btns-yes" onClick={() => {
+                            taskEdited()
+                        }}>Sim</button>
                     </div>
                 </div>
             </div>
