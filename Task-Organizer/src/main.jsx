@@ -26,12 +26,12 @@ const router = createBrowserRouter([
     element: <Tasks data={db} />,
   },
   {
-    path: "/edit",
-    element: <EditItem />
+    path: "/edit/:taskId",
+    element: <EditItem data={db} />
   },
   {
     path: "/delete",
-    element: <DeleteItem />
+    element: <DeleteItem data={db} />
   }]
 )
 
