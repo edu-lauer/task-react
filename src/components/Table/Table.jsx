@@ -19,8 +19,6 @@ const Table = ({ data }) => {
             data.push(newTask)
             
             setDesc("")
-            
-            console.log(data)
         }
     }
 
