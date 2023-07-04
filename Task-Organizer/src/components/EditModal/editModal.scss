@@ -72,3 +72,75 @@
         cursor: pointer;
     }
 }
+
+/*********************************************************************************************/
+/************************************ RESPONSIVIDADE *****************************************/
+/*********************************************************************************************/
+
+@media screen and (max-width: 768px) {     
+    .editModal {
+        width: 550px;
+        height: 300px;
+
+        &__title {
+            font-size: 30px;
+            margin-top: 3rem;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            margin-top: 2rem;
+        }
+
+        &__btns {
+            margin-top: 4rem;
+        }
+
+        &__btns-no,
+        &__btns-yes {
+            width: 7.5rem;
+            height: 2.5rem;
+            font-size: 15px;
+        }
+    }
+}
+
+/*********************************************************************************************/
+/************************************ RESPONSIVIDADE *****************************************/
+/*********************************************************************************************/
+
+@media screen and (max-width: 426px) {     
+    .editModal {
+        width: 300px;
+        height: 150px;
+
+        &__title {
+            font-size: 15px;
+            margin-top: 1.5rem;
+        }
+
+        &__subtitle {
+            font-size: 10px;
+            margin-top: 1rem;
+        }
+
+        &__btns {
+            margin-top: 2rem;
+        }
+
+        &__btns-no,
+        &__btns-yes {
+            width: 4.5rem;
+            height: 1.5rem;
+            font-size: 10px;
+        }
+
+        &__btns-no {
+            margin-right: 1rem;
+        }
+    
+        &__btns-yes {
+            margin-left: 1rem;
+        }
+    }
+}
