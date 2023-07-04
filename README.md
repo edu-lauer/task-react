@@ -41,7 +41,7 @@ https://elaborate-pixie-bc12aa.netlify.app
 
 ## Contribution
 
-This project has a personal educational objective, but is always open to receive improvements and constructive criticism. Feel free to use this code as a starting point for creating your own something.
+This project has a personal educational objective, but is always open to receive improvements and constructive feedback. Feel free to use this code as a starting point for creating your own.
 
 ## Link
 
