@@ -144,10 +144,14 @@
         }
 
         &__table-firstLine {
-            width: 400px;
+            width: 350px;
             border-bottom-width: 0.2rem;
             padding-bottom: 1.2rem;
-        } 
+        }
+
+        &__table-firstLine:first-child {
+            padding-left: 0rem;
+        }
 
         &__table-firstColumn,
         &__table-secondColumn,
@@ -169,13 +173,12 @@
         }
 
         &__table-lastLine-firstColumn {
-            padding-left: 3.5rem;
+            padding-left: 1.5rem;
             font-size: 0.7rem;
         }
 
         &__table-lastLine-lastColumn {
             padding-right: 3.5rem;
-            width: 16%;
         }
     }
 }
@@ -189,11 +192,16 @@
 @media screen and (max-width: 376px) {
     .mainContainer {
         &__table {
-            width: 370px;
+            width: 375px;
+            margin-right: 0rem;
         }
 
         &__table-firstLine {
             border-bottom-width: 0.1rem;
+        }
+
+        &__table-lastLine-firstColumn {
+            padding-left: 2.5rem
         }
     }
 }

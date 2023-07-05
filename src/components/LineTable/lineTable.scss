@@ -83,10 +83,10 @@
 
 @media screen and (max-width: 426px) {
     .itemToDo {
-        grid-template-columns: 180px 55px 165px;
+        grid-template-columns: 150px 45px 160px;
         &__title {
             text-align: left;
-            margin: 2rem 0rem 0rem 3.5rem;
+            margin: 2rem 0rem 0rem 1.5rem;
             padding: 0;
         }
     
@@ -118,6 +118,15 @@
 
 @media screen and (max-width: 376px) {
     .itemToDo {
-        grid-template-columns: 185px 45px 170px;
+        grid-template-columns: 165px 15px 165px;
+
+        &__title {
+            margin-left: 2.5rem;
+        }
+
+        &__options {
+            margin-right: 0rem;
+            padding-right: 2rem;
+        }
     }
 }
